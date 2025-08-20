@@ -38,7 +38,7 @@ git clone https://github.com/rrrarrrr/hockey-analytics.git
 cd hockey-analytics
 ```
 
-##2. Create virtual environment and install dependencies
+###2. Create virtual environment and install dependencies
 ```bash
 python -m venv env
 env\Scripts\activate    # Windows
@@ -46,16 +46,16 @@ env\Scripts\activate    # Windows
 
 pip install -r requirements.txt
 ```
-##3. Add your video
+###3. Add your video
 Place your hockey video in:
 ```bash
 data/raw/hockey_match.mp4
 ```
-##4. Run the full pipeline
+###4. Run the full pipeline
 ```bash
 python main.py
 ```
-##📈 Output
+###📈 Output
 After running, you'll get:
 ```bash
 data/tracked/ — frames with bounding boxes and labels
@@ -66,7 +66,7 @@ data/heatmap.jpg — player activity heatmap
 data/hockey_report.html — interactive HTML dashboard
 ```
 
-##🏁 Train the Puck Detector
+###🏁 Train the Puck Detector
 To improve puck detection:
 ```bash
 python train_puck.py
@@ -80,6 +80,6 @@ Use the trained model in main.py:
 ```bash
 model_puck = YOLO('runs/detect/puck_detection/weights/best.pt')
 ```
-##📄 License
+###📄 License
 MIT License — free for personal and commercial use.
 
