@@ -80,6 +80,6 @@ Use the trained model in main.py:
 ```bash
 model_puck = YOLO('runs/detect/puck_detection/weights/best.pt')
 ```
-###📄 License
+### 📄 License
 MIT License — free for personal and commercial use.
 
